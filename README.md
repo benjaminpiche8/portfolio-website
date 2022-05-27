@@ -1,2 +1,3 @@
-# portfolio-website
-Building a personal portfolio website and learning HTML, CSS, Javascript and more in the process.
+# Portfolio Website
+
+Started 05/27/22, currently under construction.
