@@ -1,3 +1,5 @@
+/* styles applied throughout the website */
+
 body {
     background-color: #39393a;
 }
@@ -56,6 +58,7 @@ div.presentation-section {
     background-color: #1d1d1d;
     box-sizing: border-box;
     padding: 20px;
+    padding-bottom: 50px;
 }
 
 h1 {
@@ -69,4 +72,125 @@ h2 {
     color: white;
     font-family: Georgia, serif;
     text-align: center;
+}
+
+.secondary-title > h1 {
+    display: block;
+    padding-left: 20px;
+    color: white;
+    font-family: Georgia, serif;
+    font-size: 80px;
+    text-align: left;
+}
+
+hr {
+    color: white;
+}
+
+.basic-text {
+    color: white;
+    font-family: Georgia, serif;
+    font-size: 20px;
+    text-align: left;
+}
+
+/* styles applied specifically to home page */
+
+/* styles applied specifically to about page */
+
+/* styles applied specifically to projects page */
+
+.grid-container {
+    display: inline-grid;
+    grid-template-columns: repeat(3, 1fr);
+    width: 100%;
+    grid-gap: 5px;
+}
+
+.grid-item {
+    display: flex;
+    height: 200px;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-family: Georgia, serif;
+    font-size: 40px;
+    font-weight: bold;
+    border: 2px solid white;
+}
+
+#project-embedded-system-2022 {
+    background-image: url(../img/project_2022_embedded_system.jpg);
+    background-position: center;
+    background-size: 500px;
+}
+
+#project-chess-game-2022 {
+    background-image: url(../img/2022_chess_game.JPG);
+    background-position: center;
+    background-size: 500px;
+}
+
+.github-section > div {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.github-link {
+    color: white;
+    font-family: Georgia, serif;
+    font-weight: bold;
+    padding-left: 15px;
+}
+
+.github-link > p > a:link {
+    color: white;
+    font-family: Georgia, serif;
+    font-weight: bold;
+}
+
+.github-link > p > a:visited {
+    color: white;
+    font-family: Georgia, serif;
+    font-weight: bold;
+}
+
+.github-link > p > a:hover {
+    color: blueviolet;
+}
+
+.yearly-subtitle > h3 {
+    color: white;
+    font-family: Georgia, serif;
+    font-size: 50px;
+    text-align: center;
+}
+
+/* styles applied specifically to contact page */
+
+/* styles applied specifically to resume page */
+
+.download-links {
+    display: block;
+    padding: 20px;
+}
+
+.download-links > a:link {
+    display: block;
+    padding: 5px;
+    overflow: hidden;
+    color: white;
+    font-family: Georgia, serif;
+}
+
+.download-links > a:visited {
+    display: block;
+    padding: 5px;
+    overflow: hidden;
+    color: white;
+    font-family: Georgia, serif;
+}
+
+.download-links > a:hover {
+    color: blueviolet;
 }
