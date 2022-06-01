@@ -108,6 +108,7 @@ hr {
 
 .grid-item {
     border: 2px solid white;
+    background-color: #1d1d1d;
 }
 
 .subgrid-container {
