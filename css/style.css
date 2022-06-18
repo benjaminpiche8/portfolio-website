@@ -1,40 +1,51 @@
-/* styles applied throughout the website */
+/* general website styling */
 
-body {
-    background-color: #39393a;
-}
-
-ul.nav-bar {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
-    list-style-type: none;
+* {
     margin: 0;
-    padding: 20px;
-    overflow: hidden;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+}
+
+section {
+    height: 500px;
     background-color: #39393a;
 }
 
-ul.nav-bar > li {
+footer {
+    height: 500px;
+    background-color: #1d1d1d;
+}
+
+/* navigation bar styling */
+
+.nav-bar {
+    position: sticky;
+    width: 100%;
+    background-color: #39393a;
+    
+    display: flex;
+    justify-content: flex-end;
+    padding: 20px;
+}
+
+.menu li {
     display: inline-block;
     padding: 15px 45px;
 }
 
-ul.nav-bar > li:hover {
+.menu li:hover {
     background-color: #1d1d1d;
 }
 
-ul.nav-bar > li > a {
-    color: white;
+.menu li a {
     position: relative;
-    font-family: Georgia, serif;
     font-size: 20px;
-    font-weight: bold;
-    text-align: center;
-    text-decoration: none;
 }
-  
-div.hover-underline-animation > ul > li > a:before {
+
+.nav-bar-animation li a:before {
     content: "";
     position: absolute;
     width: 100%;
@@ -45,16 +56,106 @@ div.hover-underline-animation > ul > li > a:before {
     transform: scaleX(0);
     transition: 0.25s ease;
 }
-  
-div.hover-underline-animation > ul > li > a:hover:before {
+
+.nav-bar-animation li a:hover:before {
     transform: scaleX(1);
 }
 
-li.active {
+.active {
     background-color: #1d1d1d;
 }
 
-div.presentation-section {
+/* home section styling */
+
+.home-section {
+    background-color: #1d1d1d;
+    height: 100vh;
+}
+
+.home-area {
+    display: flex;
+    flex-direction: column;
+    height: 80%;
+    justify-content: center;
+}
+
+.home-content {
+    margin-left: 50px;
+}
+
+.home-title-1 {
+    font-size: 60px;
+}
+
+.home-title-2 {
+    font-size: 150px;
+    margin-bottom: 60px;
+    font-weight: bold;
+}
+
+.home-title-3 {
+    font-size: 30px;
+}
+
+.blank-space {
+    height: 20%;
+    background-color: #39393a;
+}
+
+/* about section styling */
+
+.about-section {
+    display: flex;
+    justify-content: space-around;
+    height: 55vh;
+    padding: 50px 200px 0px 200px;
+    font-size: 30px;
+}
+
+.about-text-1 {
+    padding-bottom: 30px;
+}
+
+.about-text-2 {
+    font-weight: lighter;
+    padding-bottom: 20px;
+}
+
+.about-image {
+    width: 400px;
+    border-radius: 100px;
+    margin-left: 100px;
+}
+
+/* skills section styling */
+
+.skills-section {
+    display: flex;
+    height: 60vh;
+    padding: 0px 200px 0px 200px;
+    font-size: 30px;
+}
+
+/* projects section styling */
+
+/* contact section styling */
+
+/* resume section styling */
+
+/* footer styling */
+
+.footer-section {
+    color: white;
+}
+
+
+/* more styling */
+
+/* body {
+    background-color: #39393a;
+} */
+
+/* div.presentation-section {
     background-color: #1d1d1d;
     box-sizing: border-box;
     padding: 20px;
@@ -92,7 +193,7 @@ hr {
     font-family: Georgia, serif;
     font-size: 20px;
     text-align: left;
-}
+} */
 
 /* styles applied specifically to home page */
 
@@ -100,7 +201,7 @@ hr {
 
 /* styles applied specifically to projects page */
 
-.grid-container {
+/* .grid-container {
     display: grid;
     grid-template-columns: repeat(3, [col] 1fr);
     grid-gap: 5px;
@@ -214,13 +315,13 @@ hr {
     font-family: Georgia, serif;
     font-size: 50px;
     text-align: center;
-}
+} */
 
 /* styles applied specifically to contact page */
 
 /* styles applied specifically to resume page */
 
-.download-links {
+/* .download-links {
     display: block;
     padding: 20px;
 }
@@ -243,4 +344,4 @@ hr {
 
 .download-links > a:hover {
     color: blueviolet;
-}
+} */
