@@ -9,9 +9,16 @@
     color: white;
 }
 
+h2 {
+    padding-bottom: 50px;
+    font-size: 60px;
+    font-weight: bold;
+}
+
 section {
     height: 500px;
     background-color: #39393a;
+    border: 1px solid black;
 }
 
 footer {
@@ -32,7 +39,7 @@ footer {
 }
 
 .menu li {
-    display: inline-block;
+    display: inline-flex;
     padding: 15px 45px;
 }
 
@@ -68,11 +75,11 @@ footer {
 /* home section styling */
 
 .home-section {
-    background-color: #1d1d1d;
     height: 100vh;
 }
 
 .home-area {
+    background-color: #1d1d1d;
     display: flex;
     flex-direction: column;
     height: 80%;
@@ -97,65 +104,80 @@ footer {
     font-size: 30px;
 }
 
-.blank-space {
-    height: 20%;
-    background-color: #39393a;
-}
-
 /* about section styling */
 
 .about-section {
+    height: 100vh;
+}
+
+.about-content {
     display: flex;
     justify-content: space-around;
-    height: 55vh;
-    padding: 50px 200px 0px 200px;
-    font-size: 30px;
+    align-items: center;
+    margin: 5rem 10rem;
 }
 
-.about-text-1 {
-    padding-bottom: 30px;
-    font-size: 50px;
+.about-text {
+    display: flex;
+    flex-direction: column;
 }
 
-.about-text-2 {
+.about-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 2rem;
+}
+
+.about-text {
+    font-size: 2rem;
     font-weight: lighter;
-    padding-bottom: 20px;
+    margin-bottom: 1rem;
 }
 
 .about-image {
-    width: 400px;
-    border-radius: 100px;
-    margin-left: 100px;
+    width: 25rem;
+    border-radius: 5rem;
+    margin-left: 5rem;
 }
 
 /* skills section styling */
 
-.skills-section {
-    height: 30vh;
-    padding: 0px 200px 0px 200px;
-}
-
-.skills-text {
-    padding-bottom: 60px;
-    font-size: 50px;
+.skills-content {
+    margin: 5rem 10rem;
+    background-color: #1d1d1d;
+    padding: 2rem;
 }
 
 .skills {
     display: flex;
-    flex-direction: row;
-    width: 100%;
-    justify-content: center;
 }
 
 .skill {
-    padding-right: 80px;
+    margin-right: 2rem;
 }
 
 .language {
-    height: 80px;
+    height: 5rem;
 }
 
 /* projects section styling */
+
+.project-section {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.project-container {
+    display: flex;
+    justify-content: space-around;
+}
+
+.project {
+    width: 400px;
+    height: 500px;
+    box-shadow: 5px 5px 20px black;
+}
 
 /* contact section styling */
 
