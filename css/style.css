@@ -18,12 +18,7 @@ h2 {
 section {
     /* height: 500px; */
     background-color: #39393a;
-    /* border: 1px solid black; */
-}
-
-footer {
-    height: 500px;
-    background-color: #1d1d1d;
+    /* border-bottom: 1px solid white; */
 }
 
 /* navigation bar styling */
@@ -32,7 +27,7 @@ footer {
     position: sticky;
     width: 100%;
     background-color: #39393a;
-    
+
     display: flex;
     justify-content: flex-end;
     padding: 20px;
@@ -134,6 +129,33 @@ footer {
     margin-bottom: 1rem;
 }
 
+.about-more {
+    font-size: 1rem;
+    font-weight: normal;
+    margin-top: 1rem;
+    text-align: left;
+}
+
+.about-more > a {
+    position: relative;
+}
+
+.about-more > a:before {
+    content: "";
+    position: absolute;
+    height: 1px;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    background-color: white;
+    transform: scaleX(0);
+    transition: 0.25s ease;
+}
+
+.about-more > a:hover:before {
+    transform: scaleX(1);
+}
+
 .about-image {
     width: 25rem;
     border-radius: 5rem;
@@ -143,7 +165,7 @@ footer {
 /* skills section styling */
 
 .skills-content {
-    margin: 5rem 10rem;
+    margin: 3rem 10rem;
     background-color: #1d1d1d;
     padding: 2rem;
 }
@@ -259,14 +281,87 @@ footer {
 
 /* contact section styling */
 
-/* resume section styling */
+.contact-section {
+    height: 50vh;
+    display: flex;
+    align-items: center;
+}
+
+.contact-content {
+    display: flex;
+    width: 100%;
+    background-color: #1d1d1d;
+    margin: 20rem;
+    padding: 5rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-text-1 {
+    font-weight: bold;
+    font-size: 3rem;
+    padding-bottom: 2rem;
+}
+
+.contact-text-2 {
+    font-size: 2rem;
+    font-weight: lighter;
+}
+
+
+.contact-text-2 > span > a {
+    font-weight: bold;
+    position: relative;
+}
+
+.contact-text-2 > span > a:before {
+    content: "";
+    position: absolute;
+    height: 1px;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    background-color: white;
+    transform: scaleX(0);
+    transition: 0.25s ease;
+}
+
+.contact-text-2 > span > a:hover:before {
+    transform: scaleX(1);
+}
+
+.contact-image > img {
+    width: 12rem;
+    margin-left: 10rem;
+}
 
 /* footer styling */
 
 .footer-section {
-    color: white;
+    height: 15vh;
+    background-color: #1d1d1d;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
+.footer-text {
+    margin-left: 10rem;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: right;
+    margin-right: 10rem;
+}
+
+.icon {
+    margin-right: 1rem;
+}
+
+.icon > a > img {
+    height: 3rem;
+}
 
 /* more styling */
 
